@@ -1,0 +1,35 @@
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  info:
+    env:
+      enabled: true
+
+sistema:
+  eureka:
+    host: ${eurekaServerHost}
+    login: ${eurekaServerUser}
+    senha: ${eurekaServerPass}
+  auth:
+    jwtSecret: ${JWTSecret}
+    jwtExpirationMs: 14400000
+  swagger:
+    login: ${swaggerUser}
+    senha: ${swaggerPass}
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: 'http://${sistema.eureka.login}:${sistema.eureka.senha}@${sistema.eureka.host}:8761/eureka'
+  instance:
+    hostname: ${sistema.eureka.host}
+
+kafka:
+  topico:
+    esqueci-minha-senha: esqueci-minha-senha

@@ -1,0 +1,32 @@
+
+server:
+  port: 9002
+  servlet:
+    context-path: '/autenticacao-service/'
+
+spring:
+  main:
+    banner-mode: off
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://${autenticacaoDBHost}:5432/${autenticacaoDBBase}
+    username: ${autenticacaoDBUser}
+    password: ${autenticacaoDBPass}
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+      org:
+        hibernate:
+          envers:
+            audit_table_prefix: 
+            audit_table_suffix: _auditoria
+            revision_field_name: revisao
+            revision_type_field_name: tipo
+            store_data_at_delete: true
+            default_schema: auditoria
+  kafka:
+    bootstrap-servers: ${kafkaHost}:9092
+
