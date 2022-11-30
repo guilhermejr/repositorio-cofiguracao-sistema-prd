@@ -1,3 +1,8 @@
+server:
+  port: 9002
+  servlet:
+    context-path: '/autenticacao-service/'
+  
 spring:
   main:
     banner-mode: off
