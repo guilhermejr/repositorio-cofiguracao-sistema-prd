@@ -2,24 +2,24 @@ server:
   port: 9002
   servlet:
     context-path: '/autenticacao-service/'
-    
+
 spring:
   main:
     banner-mode: off
-  # datasource:
-  #   driverClassName: org.postgresql.Driver
-  #   url: jdbc:postgresql://${autenticacaoDBHost}:5432/${autenticacaoDBBase}
-  #   username: ${autenticacaoDBUser}
-  #   password: ${autenticacaoDBPass}
-  #   url: jdbc:postgresql://banco-de-dados.csr365jiv0me.us-east-1.rds.amazonaws.com:5432/autenticacao
-  #   username: postgres
-  #   password: 86Lqu9aOg4ca
-  # jpa:
-  #   database-platform: org.hibernate.dialect.PostgreSQLDialect
-  #   show-sql: true
-  #   properties:
-  #     hibernate:
-  #       format_sql: true
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://${autenticacaoDBHost}:5432/${autenticacaoDBBase}
+    username: ${autenticacaoDBUser}
+    password: ${autenticacaoDBPass}
+    url: jdbc:postgresql://banco-de-dados.csr365jiv0me.us-east-1.rds.amazonaws.com:5432/autenticacao
+    username: postgres
+    password: 86Lqu9aOg4ca
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
   #     org:
   #       hibernate:
   #         envers:
