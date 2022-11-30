@@ -8,9 +8,9 @@ spring:
     banner-mode: off
   datasource:
     driverClassName: org.postgresql.Driver
-    url: jdbc:postgresql://${autenticacaoDBHost}:5432/${autenticacaoDBBase}
-    username: ${autenticacaoDBUser}
-    password: ${autenticacaoDBPass}
+    # url: jdbc:postgresql://${autenticacaoDBHost}:5432/${autenticacaoDBBase}
+    # username: ${autenticacaoDBUser}
+    # password: ${autenticacaoDBPass}
     url: jdbc:postgresql://banco-de-dados.csr365jiv0me.us-east-1.rds.amazonaws.com:5432/autenticacao
     username: postgres
     password: 86Lqu9aOg4ca
