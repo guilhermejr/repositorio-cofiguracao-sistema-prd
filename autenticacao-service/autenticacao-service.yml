@@ -1,9 +1,3 @@
-
-server:
-  port: 9002
-  servlet:
-    context-path: '/autenticacao-service/'
-
 spring:
   main:
     banner-mode: off
@@ -27,6 +21,6 @@ spring:
             revision_type_field_name: tipo
             store_data_at_delete: true
             default_schema: auditoria
-  kafka:
-    bootstrap-servers: ${kafkaHost}:9092
+  # kafka:
+  #   bootstrap-servers: ${kafkaHost}:9092
 
