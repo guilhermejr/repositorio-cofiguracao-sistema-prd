@@ -31,5 +31,5 @@ spring:
 
 eureka:
   instance:
-    hostname: 'autenticacao-service'
+    hostname: ${eurekaHostname}
     non-secure-port: 9002
