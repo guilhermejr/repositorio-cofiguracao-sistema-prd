@@ -29,5 +29,5 @@ spring:
 
 eureka:
   instance:
-    hostname: 'energia-service'
+    hostname: ${eurekaHostname}
     non-secure-port: 9001

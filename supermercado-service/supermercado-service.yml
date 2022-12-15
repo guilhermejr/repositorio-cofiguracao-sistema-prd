@@ -33,5 +33,5 @@ sistema:
 
 eureka:
   instance:
-    hostname: 'supermercado-service'
+    hostname: ${eurekaHostname}
     non-secure-port: 9005
