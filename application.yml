@@ -1,4 +1,16 @@
-
+spring:
+  mail:
+    host: ${emailHost}
+    port: 587
+    username: ${emailUser}
+    password: ${emailPass}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            
 management:
   endpoint:
     health:
