@@ -40,5 +40,5 @@ cloud:
     fila:
       esqueci-minha-senha: 
         url: ${aws-queue-esqueci-minha-senha}
-        daley: ${aws-delay-esqueci-minha-senha}
+        delay: ${aws-delay-esqueci-minha-senha}
 
