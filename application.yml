@@ -28,6 +28,14 @@ eureka:
     serviceUrl:
       defaultZone: 'http://${sistema.eureka.login}:${sistema.eureka.senha}@${sistema.eureka.host}:8761/eureka'
 
-kafka:
-  topico:
-    esqueci-minha-senha: esqueci-minha-senha
+cloud:
+  aws:
+    region:
+      static: us-east-1
+    stack:
+      auto: false
+    credentials:
+      access-key: ${aws-access-key}
+      secret-key: ${aws-secret-key}
+    fila:
+      esqueci-minha-senha: ${aws-queue-esqueci-minha-senha}
