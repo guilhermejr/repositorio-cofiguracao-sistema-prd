@@ -17,15 +17,6 @@ spring:
     properties:
       hibernate:
         format_sql: true
-      org:
-        hibernate:
-          envers:
-            audit_table_prefix: 
-            audit_table_suffix: _auditoria
-            revision_field_name: revisao
-            revision_type_field_name: tipo
-            store_data_at_delete: true
-            default_schema: auditoria
 
 eureka:
   instance:
