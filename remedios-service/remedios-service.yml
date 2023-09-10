@@ -21,4 +21,4 @@ spring:
 eureka:
   instance:
     hostname: ${eurekaHostname}
-    non-secure-port: 9001
+    non-secure-port: 9006
