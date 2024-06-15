@@ -20,6 +20,7 @@ spring:
 
 sistema:
   nfe-ba-service:
+    tempoProcessamentoNFE: ${tempoProcessamentoNFE}
     url: ${NFEBAHost}
 
 eureka:
