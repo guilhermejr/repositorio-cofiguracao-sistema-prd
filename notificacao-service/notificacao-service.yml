@@ -1,0 +1,13 @@
+server:
+  port: 9007
+  servlet:
+    context-path: '/notificacao-service/'
+
+spring:
+  main:
+    banner-mode: off
+
+eureka:
+  instance:
+    hostname: ${eurekaHostname}
+    non-secure-port: 9007
