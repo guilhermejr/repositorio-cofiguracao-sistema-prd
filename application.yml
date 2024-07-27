@@ -56,4 +56,7 @@ cloud:
       esqueci-minha-senha: 
         url: ${aws-queue-esqueci-minha-senha}
         delay: ${aws-delay-esqueci-minha-senha}
+      nfe-supermercado:
+        url: ${aws-queue-nfe-supermercado}
+        delay: ${aws-delay-nfe-supermercado}
 
