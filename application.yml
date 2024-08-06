@@ -48,6 +48,8 @@ sistema:
   pushover:
     token: ${pushoverToken}
     user: ${pushoverUser}
+  notificacao:
+    host: ${notificacaoHost}
 
 eureka:
   client:
