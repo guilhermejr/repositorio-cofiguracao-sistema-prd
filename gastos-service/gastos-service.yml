@@ -1,5 +1,5 @@
 server:
-  port: 9007
+  port: 9008
   servlet:
     context-path: '/gastos-service/'
 
@@ -21,4 +21,4 @@ spring:
 eureka:
   instance:
     hostname: ${eurekaHostname}
-    non-secure-port: 9007
+    non-secure-port: 9008
