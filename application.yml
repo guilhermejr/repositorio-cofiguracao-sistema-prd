@@ -50,6 +50,7 @@ sistema:
     user: ${pushoverUser}
   notificacao:
     host: ${notificacaoHost}
+  url: ${url}
 
 eureka:
   client:
