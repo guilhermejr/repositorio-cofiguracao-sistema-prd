@@ -1,0 +1,24 @@
+server:
+  port: 9009
+  servlet:
+    context-path: '/salario-service/'
+
+spring:
+  main:
+    banner-mode: off
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://${salarioDBHost}:5432/${salarioDBBase}
+    username: ${salarioDBUser}
+    password: ${salarioDBPass}
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+eureka:
+  instance:
+    hostname: ${eurekaHostname}
+    non-secure-port: 9009
