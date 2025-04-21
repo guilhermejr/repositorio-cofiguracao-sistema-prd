@@ -41,7 +41,8 @@ sistema:
     senha: ${eurekaServerPass}
   auth:
     jwtSecret: ${JWTSecret}
-    jwtExpirationMs: 14400000
+    jwtExpirationMs: ${JWTExpirationMs}
+    jwtRefreshTokenExpirationMs: ${JWTRefreshTokenExpirationMs} 
   swagger:
     login: ${swaggerUser}
     senha: ${swaggerPass}
