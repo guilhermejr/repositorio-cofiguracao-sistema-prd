@@ -25,7 +25,9 @@ spring:
 management:
   endpoint:
     health:
-      show-details: always
+      show-details: never
+      probes:
+        enabled: true
   endpoints:
     web:
       exposure:
