@@ -1,14 +1,14 @@
 server:
   port: 9011
   servlet:
-    context-path: '/nfe-ba-service/'
+    context-path: '/nfe-service/'
 
 spring:
   main:
     banner-mode: off
 
 sistema:
-  nfe-ba:
+  nfe:
     url: 'http://nfe.sefaz.ba.gov.br/servicos/nfce/qrcode.aspx?p='
     timeout: 30000
 
