@@ -1,0 +1,18 @@
+server:
+  port: 9011
+  servlet:
+    context-path: '/nfe-ba-service/'
+
+spring:
+  main:
+    banner-mode: off
+
+sistema:
+  nfe-ba:
+    url: 'http://nfe.sefaz.ba.gov.br/servicos/nfce/qrcode.aspx?p='
+    timeout: 30000
+
+eureka:
+  instance:
+    hostname: ${eurekaHostname}
+    non-secure-port: 9011
