@@ -1,0 +1,24 @@
+server:
+  port: 9012
+  servlet:
+    context-path: '/ponto-service/'
+
+spring:
+  main:
+    banner-mode: off
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://${pontoDBHost}:5432/${pontoDBBase}
+    username: ${pontoDBUser}
+    password: ${pontoDBPass}
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+eureka:
+  instance:
+    hostname: ${eurekaHostname}
+    non-secure-port: 9012
